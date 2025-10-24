@@ -2,17 +2,22 @@
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
-A tiny script that reads and prints the text of Frankenstein.
+# BookBot
+A CLI tool that analyzes a text file (like a book) and reports word counts, character frequencies, and other stats.
 
-## Requirements
-- Python 3.10+ (or similar)
+## Features
+- Count total words
+- Frequency of each character (letters only or all chars—configurable)
+- Top-N most common words
+- Optional JSON output and file export
+- Clean, deterministic output for grading
 
-## Setup
-
-This project ignores the books/ directory, so you must create it locally:
+## Installation
+- Requires Python 3.10+
 
 ```bash
-# from the project root (where main.py lives)
-mkdir -p books
-# download the text
-curl -L -o books/frankenstein.txt https://www.gutenberg.org/cache/epub/84/pg84.txt
+git clone https://github.com/<your-username>/bookbot
+cd bookbot
+# optional: create a venv
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt  # if present
