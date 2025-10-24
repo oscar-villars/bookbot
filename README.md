@@ -16,7 +16,7 @@ A CLI tool that analyzes a text file (like a book) and reports word counts, char
 - Requires Python 3.10+
 
 ```bash
-git clone https://github.com/<your-username>/bookbot
+git clone https://github.com/oscar-villars/bookbot
 cd bookbot
 # optional: create a venv
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
